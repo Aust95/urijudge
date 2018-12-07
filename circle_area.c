@@ -7,5 +7,6 @@ int main()
 	scanf("%lf", &r);
 	a = PI * r * r;
 	printf("A=.4%lf\n", a);
+
 	return 0;
-	}
+}
