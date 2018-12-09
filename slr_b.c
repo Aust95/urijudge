@@ -6,14 +6,19 @@ typedef struct job_d {
 	double s_sal, v_sold;
 }data;
 
-static void scan_data( double  *s_ptr, double *v_ptr)
+static void scan_data(double  *s_ptr, double *v_ptr)
 {
 	scanf("%lf %lf", s_ptr, v_ptr);
 }
 
-static double bonus(const double *s_ptr, double *v_ptr)
+static double bonus(double *s_ptr, double *v_ptr)
 {
 	return *(s_ptr) + ((*(v_ptr)/100) * 15);
+}
+
+void print_data(double *s_ptr, double *v_ptr)
+{
+	printf("TOTAL = R$ %.2lf\n", bonus(s_ptr, v_ptr));
 }
 
 int main()
@@ -22,8 +27,7 @@ int main()
 
 	scanf("%s", work.person);
 	scan_data(&work.s_sal, &work.v_sold);
-
-	printf("TOTAL = R$ %.2lf\n", bonus(&work.s_sal, &work.v_sold));
+	print_data(&work.s_sal, &work.v_sold);
 
 	return 0;
 }
