@@ -16,7 +16,7 @@ static double bonus(double *s_ptr, double *v_ptr)
 	return *(s_ptr) + ((*(v_ptr)/100) * 15);
 }
 
-void print_data(double *s_ptr, double *v_ptr)
+static void print_data(double *s_ptr, double *v_ptr)
 {
 	printf("TOTAL = R$ %.2lf\n", bonus(s_ptr, v_ptr));
 }
