@@ -1,6 +1,6 @@
 CXX=gcc#compilador
 CXX_FLAGS=-fsanitize=address -O3 -Wall -Wextra -lm#flags
-SRC=distance.c#arquivo de entrada
+SRC=distance2.c#arquivo de entrada
 PROGRAM_NAME=f.arc #arquivo e formato de saida
 
 $(PROGRAM_NAME): $(SRC)
