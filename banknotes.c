@@ -23,7 +23,7 @@ static void printvalues(money *type)
 	printf("%d\n", type->n);
 
 	for (int i = 0; i < 7; i++){
-		printf("%d nota(s) de R$ %d,00\n", type->arr2[i], type->arr[i]);
+		printf("%d nota (s) de R$ %.2d,00\n", type->arr2[i], type->arr[i]);
 	}
 }
 
