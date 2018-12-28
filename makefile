@@ -1,6 +1,6 @@
 CXX=gcc#compilador
 CXX_FLAGS=-fsanitize=address -O3 -Wall -Wextra -lm#flags
-SRC=fuel_spend.c#arquivo de entrada
+SRC=banknotes.c#arquivo de entrada
 PROGRAM_NAME=f.arc #arquivo e formato de saida
 
 $(PROGRAM_NAME): $(SRC)
